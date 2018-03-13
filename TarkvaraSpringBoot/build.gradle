@@ -17,15 +17,21 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'helitehnika'
 version = '0.0.1-SNAPSHOT'
+
 sourceCompatibility = 9
+
+bootJar{
+	baseName = 'gs-accessing-data-jpa'
+    version =  '0.1.0'
+}
 
 repositories {
 	mavenCentral()
 }
 
-
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')	
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.data:spring-data-rest-hal-browser')
 	runtime('com.h2database:h2')
@@ -33,4 +39,5 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
 	testCompile('org.springframework.security:spring-security-test')
+	testCompile("junit:junit")
 }
