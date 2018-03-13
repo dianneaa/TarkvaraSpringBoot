@@ -11,15 +11,18 @@ import lombok.Setter;
 @Setter
 public class Advert {
 
-@Id
-@GeneratedValue
+	@Id
+	@GeneratedValue
+	
+	long id;
+	String title;
+	String description;
+	double price;
+	String email;
+	String phone;
+	String category;
+	String subcategory;
+	
 
-int id;
-String title;
-String description;
-double price;
-String email;
-String phone;
-String category;
-String subcategory;
+
 }
