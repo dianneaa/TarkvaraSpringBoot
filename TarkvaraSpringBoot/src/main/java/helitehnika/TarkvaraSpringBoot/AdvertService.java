@@ -14,7 +14,7 @@ public class AdvertService {
 
 	Advert addAdvert(Advert advert) {
 		// here you can do some validations etc before saving the user
-		advert.setAdvert(new Advert());
+		//advert.setAdvert(new Advert());
 		return advertRepository.save(advert);
 	}
 }

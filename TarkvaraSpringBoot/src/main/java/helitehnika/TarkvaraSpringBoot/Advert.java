@@ -14,6 +14,8 @@ public class Advert {
 	@Id
 	@GeneratedValue
 	
+	
+	
 	long id;
 	String title;
 	String description;
