@@ -17,4 +17,23 @@ public class AdvertService {
 		//advert.setAdvert(new Advert());
 		return advertRepository.save(advert);
 	}
+	
+	public Student getAdvertById(long id){
+		return advertRepository.findOne(id);
+    }
+
+    public void removeAdvertById(long id) {
+        this.advertRepository.removeAdvertById(id);
+    }
+
+    public void updateAdvert(Advert advert){
+        this.advertRepository.updateAdvert(advert);
+    }
+
+    List<User> getAllAdverts() {
+		return advertRepository.findAll();
+	}
+    
+}
+
 }
