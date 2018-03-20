@@ -31,7 +31,7 @@ public class AdvertController {
     public void deleteAdvertById(@PathVariable("id") long id){
         advertService.removeAdvertById(id);
     }
-    //updateAdvertById - võtab sisse jsoni, et uuendada kuulutuse andmeid
+    //updateAdvertById võtab sisse jsoni, et uuendada kuulutuse andmeid
     @RequestMapping(method = RequestMethod.PUT, consumes = "application/json")
     public void updateAdvertById(@RequestBody Advert advert){
         advertService.updateAdvert(advert);
@@ -39,7 +39,7 @@ public class AdvertController {
     //getAllAdverts
     @RequestMapping(value="/adverts", method=RequestMethod.GET)
 	public List<Advert> getAllAdverts() {
-		return userService.getAllAdverts();
+		return advertService.getAllAdverts();
 	}
 }
 

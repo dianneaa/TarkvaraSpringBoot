@@ -18,7 +18,7 @@ public class AdvertService {
 		return advertRepository.save(advert);
 	}
 	
-	public Student getAdvertById(long id){
+	public void getAdvertById(long id){
 		return advertRepository.findOne(id);
     }
 
@@ -30,10 +30,10 @@ public class AdvertService {
         this.advertRepository.updateAdvert(advert);
     }
 
-    List<User> getAllAdverts() {
+    List<Advert> getAllAdverts() {
 		return advertRepository.findAll();
 	}
     
 }
 
-}
+
