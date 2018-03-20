@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController
 public class AdvertController {
@@ -31,7 +32,7 @@ public class AdvertController {
     public void deleteAdvertById(@PathVariable("id") long id){
         advertService.removeAdvertById(id);
     }
-    //updateAdvertById võtab sisse jsoni, et uuendada kuulutuse andmeid
+    //updateAdvertById
     @RequestMapping(method = RequestMethod.PUT, consumes = "application/json")
     public void updateAdvertById(@RequestBody Advert advert){
         advertService.updateAdvert(advert);
