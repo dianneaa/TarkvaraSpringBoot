@@ -18,7 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 group = 'helitehnika'
 version = '0.0.1-SNAPSHOT'
 
-sourceCompatibility = 9
+sourceCompatibility = 8
 
 bootJar{
 	baseName = 'gs-accessing-data-jpa'
