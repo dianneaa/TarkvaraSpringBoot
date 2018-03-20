@@ -12,9 +12,7 @@ import lombok.Setter;
 public class Advert {
 
 	@Id
-	@GeneratedValue
-	
-	
+	@GeneratedValue	
 	
 	long id;
 	String title;
