@@ -32,15 +32,14 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')	
-	compile('org.springframework.boot:spring-boot-starter-security')
-	compile('org.springframework.data:spring-data-rest-hal-browser')
+	//compile('org.springframework.boot:spring-boot-starter-security')
+	compile('org.springframework.data:spring-data-rest-hal-browser')	
 	runtime ("javax.xml.bind:jaxb-api")
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
-	testCompile('org.springframework.security:spring-security-test')
+	//testCompile('org.springframework.security:spring-security-test')
 	testCompile("junit:junit")
-	compileOnly ('org.projectlombok:lombok:1.16.20')
+	compileOnly ('org.projectlombok:lombok:1.16.20')	
 	
-	//apt ("org.projectlombok:lombok:1.16.20")
 }
