@@ -3,8 +3,10 @@ package helitehnika.TarkvaraSpringBoot;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController
 public class AdvertController {
@@ -27,9 +29,9 @@ public class AdvertController {
         return advertService.getAdvertById(id);
     }
     //deleteAdvertById
-    @RequestMapping(value = "advert/{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "advert/{id}", method = RequestMethod.DELETE)
     public void deleteAdvertById(@PathVariable("id") long id){
-        advertService.removeAdvertById(id);
+        advertService.deleteById(id);
     }
     //updateAdvertById võtab sisse jsoni, et uuendada kuulutuse andmeid
     @RequestMapping(method = RequestMethod.PUT, consumes = "application/json")

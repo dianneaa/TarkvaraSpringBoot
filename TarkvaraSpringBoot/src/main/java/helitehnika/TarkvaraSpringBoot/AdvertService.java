@@ -2,6 +2,7 @@ package helitehnika.TarkvaraSpringBoot;
 
 import org.springframework.stereotype.Service;
 import helitehnika.TarkvaraSpringBoot.Advert;
+import java.util.List;
 
 @Service
 public class AdvertService {
@@ -23,7 +24,7 @@ public class AdvertService {
     }
 
     public void removeAdvertById(long id) {
-        this.advertRepository.removeAdvertById(id);
+        this.advertRepository.delete(id);
     }
 
     public void updateAdvert(Advert advert){
