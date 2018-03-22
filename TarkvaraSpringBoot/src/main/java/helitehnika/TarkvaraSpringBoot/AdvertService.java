@@ -18,7 +18,7 @@ public class AdvertService {
 		//advert.setAdvert(new Advert());
 		return advertRepository.save(advert);
 	}
-	
+	/*
 	public void getAdvertById(long id){
 		return advertRepository.findOne(id);
     }
@@ -34,7 +34,7 @@ public class AdvertService {
     List<Advert> getAllAdverts() {
 		return advertRepository.findAll();
 	}
-    
+    */
 }
 
 

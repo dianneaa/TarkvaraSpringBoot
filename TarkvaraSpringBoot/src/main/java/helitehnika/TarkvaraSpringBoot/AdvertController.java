@@ -15,6 +15,7 @@ public class AdvertController {
 	public AdvertController(AdvertService advertService) {
 		this.advertService = advertService;
 	}	
+	
 	//addAdvert
 	@RequestMapping(value="/advert/add", method=RequestMethod.POST,
 			consumes = "application/json")
@@ -22,11 +23,13 @@ public class AdvertController {
 		return advertService.addAdvert(advert);
 	}
 	
+	 /*
 	//getAdvertById
     @RequestMapping(value = "advert/{id}", method = RequestMethod.GET)
     public Advert getAdvertById(@PathVariable("id") long id){
         return advertService.getAdvertById(id);
     }
+  
     //deleteAdvertById
     @DeleteMapping(value = "advert/{id}", method = RequestMethod.DELETE)
     public void deleteAdvertById(@PathVariable("id") long id){
@@ -42,6 +45,7 @@ public class AdvertController {
 	public List<Advert> getAllAdverts() {
 		return advertService.getAllAdverts();
 	}
+	*/
 }
 
 	
