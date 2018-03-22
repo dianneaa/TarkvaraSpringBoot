@@ -24,7 +24,7 @@ public class AdvertService {
     }
 
     public void removeAdvertById(long id) {
-        this.advertRepository.delete(id);
+        this.advertRepository.removeAdvertById(id);
     }
 
     public void updateAdvert(Advert advert){
