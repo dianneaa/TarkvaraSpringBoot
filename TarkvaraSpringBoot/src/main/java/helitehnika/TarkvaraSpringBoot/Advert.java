@@ -23,6 +23,8 @@ public class Advert {
 	String category;
 	String subcategory;
 	
+	
+
 
 
 }

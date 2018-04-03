@@ -23,6 +23,13 @@ public class AdvertController {
 		return advertService.addAdvert(advert);
 	}
 	
+	 //getAllAdverts
+    @RequestMapping(value="/adverts", method=RequestMethod.GET)
+	public List<Advert> getAllAdverts() {
+		return advertService.getAllAdverts();
+	}
+    /*
+	
 	 /*
 	//getAdvertById
     @RequestMapping(value = "advert/{id}", method = RequestMethod.GET)
@@ -39,13 +46,10 @@ public class AdvertController {
     @RequestMapping(method = RequestMethod.PUT, consumes = "application/json")
     public void updateAdvertById(@RequestBody Advert advert){
         advertService.updateAdvert(advert);
-    }
-    //getAllAdverts
-    @RequestMapping(value="/adverts", method=RequestMethod.GET)
-	public List<Advert> getAllAdverts() {
-		return advertService.getAllAdverts();
-	}
-	*/
+    }*/
+	
+   
+	
 }
 
 	

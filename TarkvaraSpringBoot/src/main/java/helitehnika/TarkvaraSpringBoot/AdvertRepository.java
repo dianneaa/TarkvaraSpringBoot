@@ -7,5 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AdvertRepository extends CrudRepository<Advert, Long> {
+	@Override
+	public List<Advert> findAll();
+	
 
 }
