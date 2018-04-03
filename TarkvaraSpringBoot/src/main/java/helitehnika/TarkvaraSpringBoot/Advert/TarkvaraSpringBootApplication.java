@@ -1,4 +1,4 @@
-package helitehnika.TarkvaraSpringBoot;
+package helitehnika.TarkvaraSpringBoot.Advert;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

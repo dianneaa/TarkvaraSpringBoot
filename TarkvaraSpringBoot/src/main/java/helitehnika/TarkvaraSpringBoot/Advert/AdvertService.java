@@ -1,7 +1,9 @@
-package helitehnika.TarkvaraSpringBoot;
+package helitehnika.TarkvaraSpringBoot.Advert;
 
 import org.springframework.stereotype.Service;
-import helitehnika.TarkvaraSpringBoot.Advert;
+
+import helitehnika.TarkvaraSpringBoot.Advert.Advert;
+
 import java.util.List;
 
 @Service

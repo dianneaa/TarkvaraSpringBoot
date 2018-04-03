@@ -1,4 +1,4 @@
-package helitehnika.TarkvaraSpringBoot;
+package helitehnika.TarkvaraSpringBoot.Advert;
 
 import java.util.List;
 

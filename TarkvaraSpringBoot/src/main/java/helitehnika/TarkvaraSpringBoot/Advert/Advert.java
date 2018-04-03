@@ -1,4 +1,4 @@
-package helitehnika.TarkvaraSpringBoot;
+package helitehnika.TarkvaraSpringBoot.Advert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -22,9 +22,5 @@ public class Advert {
 	String phone;
 	String category;
 	String subcategory;
-	
-	
-
-
 
 }
