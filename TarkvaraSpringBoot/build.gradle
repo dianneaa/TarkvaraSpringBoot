@@ -43,3 +43,24 @@ dependencies {
 	compileOnly ('org.projectlombok:lombok:1.16.20')	
 	
 }
+
+task sayHello{
+	 doLast{
+	 	println'Hello world!'
+	 }
+	 doFirst{
+	 println'Hello world again!'
+	 4.times {println'Hello!'}
+	 }
+}
+
+task sayBye(dependsOn: 'sayHello'){
+	doFirst{
+	println 'Good bye!'}
+}
+
+task sayfinal(dependsOn: 'sayBye'){
+	doFirst{
+		println('Final Task')
+	}
+}

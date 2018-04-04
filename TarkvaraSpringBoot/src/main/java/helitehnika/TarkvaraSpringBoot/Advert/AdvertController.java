@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class AdvertController {
@@ -28,15 +29,14 @@ public class AdvertController {
 	public List<Advert> getAllAdverts() {
 		return advertService.getAllAdverts();
 	}
-    /*
-	
-	 /*
+    	 
 	//getAdvertById
     @RequestMapping(value = "advert/{id}", method = RequestMethod.GET)
-    public Advert getAdvertById(@PathVariable("id") long id){
+    public Optional<Advert> getAdvertById(@PathVariable("id") long id){
         return advertService.getAdvertById(id);
     }
-  
+    
+    /*
     //deleteAdvertById
     @DeleteMapping(value = "advert/{id}", method = RequestMethod.DELETE)
     public void deleteAdvertById(@PathVariable("id") long id){

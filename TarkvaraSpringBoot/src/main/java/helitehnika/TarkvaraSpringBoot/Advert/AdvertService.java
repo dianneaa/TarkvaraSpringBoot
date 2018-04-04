@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import helitehnika.TarkvaraSpringBoot.Advert.Advert;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AdvertService {
@@ -25,11 +26,11 @@ public class AdvertService {
 			return advertRepository.findAll();
 		}
 	 
-	/*
-	public void getAdvertById(long id){
-		return advertRepository.findOne(id);
+	
+	Optional<Advert> getAdvertById(long id){
+		return advertRepository.findById(id);
     }
-
+/*
     public void removeAdvertById(long id) {
         this.advertRepository.removeAdvertById(id);
     }
