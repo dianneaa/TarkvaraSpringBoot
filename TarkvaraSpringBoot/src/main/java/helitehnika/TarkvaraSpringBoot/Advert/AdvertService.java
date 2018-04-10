@@ -28,7 +28,7 @@ public class AdvertService {
 	 
 	
 	Optional<Advert> getAdvertById(long id){
-		return advertRepository.findById(id);
+		return advertRepository.findOne(id);
     }
 /*
     public void removeAdvertById(long id) {
