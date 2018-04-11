@@ -13,9 +13,8 @@ private UserService userService;
 	
 	public UserController(UserService userService) {
 		this.userService = userService;
-	}	
+	}		
 	
-	//addUser
 	@RequestMapping(value="/user/add", method=RequestMethod.POST,
 			consumes = "application/json")
 	public User addUser(@RequestBody User user) {

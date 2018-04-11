@@ -17,39 +17,24 @@ public class AdvertController {
 		this.advertService = advertService;
 	}	
 	
-	//addAdvert
+	
 	@RequestMapping(value="/advert/add", method=RequestMethod.POST,
 			consumes = "application/json")
 	public Advert addAdvert(@RequestBody Advert advert) {
 		return advertService.addAdvert(advert);
 	}
 	
-	 //getAllAdverts
+
     @RequestMapping(value="/adverts", method=RequestMethod.GET)
 	public List<Advert> getAllAdverts() {
 		return advertService.getAllAdverts();
 	}
     	 
-	//getAdvertById
+	
     @RequestMapping(value = "/adverts/{id}", method = RequestMethod.GET)
     public Optional<Advert> getAdvertById(@PathVariable("id") long id){
         return advertService.getAdvertById(id);
-    }
-    
-    /*
-    //deleteAdvertById
-    @DeleteMapping(value = "advert/{id}", method = RequestMethod.DELETE)
-    public void deleteAdvertById(@PathVariable("id") long id){
-        advertService.deleteById(id);
-    }
-    //updateAdvertById võtab sisse jsoni, et uuendada kuulutuse andmeid
-    @RequestMapping(method = RequestMethod.PUT, consumes = "application/json")
-    public void updateAdvertById(@RequestBody Advert advert){
-        advertService.updateAdvert(advert);
-    }*/
-	
-   
-	
+    }    	
 }
 
 	

@@ -16,9 +16,7 @@ public class AdvertService {
 		this.advertRepository = advertRepository;
 	}
 
-	Advert addAdvert(Advert advert) {
-		// here you can do some validations etc before saving the user
-		//advert.setAdvert(new Advert());
+	Advert addAdvert(Advert advert) {		
 		return advertRepository.save(advert);
 	}
 	
@@ -28,19 +26,9 @@ public class AdvertService {
 	 
 	
 	Optional<Advert> getAdvertById(long id){
-		return advertRepository.findOne(id);
-    }
-/*
-    public void removeAdvertById(long id) {
-        this.advertRepository.removeAdvertById(id);
+		return advertRepository.findById(id);
     }
 
-    public void updateAdvert(Advert advert){
-        this.advertRepository.updateAdvert(advert);
-    }
-
-   
-    */
 }
 
 

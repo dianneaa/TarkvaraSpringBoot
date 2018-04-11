@@ -12,8 +12,9 @@ public class UserService {
 	}
 
 	User addUser(User user) {
-		// here you can do some validations etc before saving the user
-		//advert.setAdvert(new Advert());
+		// here you can do some validations etc before saving the user		
 		return userRepository.save(user);
 	}
+	
+	
 }
