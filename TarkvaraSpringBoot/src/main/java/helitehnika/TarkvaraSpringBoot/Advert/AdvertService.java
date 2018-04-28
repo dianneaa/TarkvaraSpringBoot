@@ -1,9 +1,6 @@
 package helitehnika.TarkvaraSpringBoot.Advert;
-
 import org.springframework.stereotype.Service;
-
 import helitehnika.TarkvaraSpringBoot.Advert.Advert;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -28,6 +25,11 @@ public class AdvertService {
 	Optional<Advert> getAdvertById(long id){
 		return advertRepository.findById(id);
     }
+
+	List<Advert> getAdvertsBySubcategory(String subcategory) {
+		
+		return advertRepository.findBySubcategory(subcategory);
+	}
 
 }
 

@@ -29,6 +29,11 @@ public class AdvertController {
 	public List<Advert> getAllAdverts() {
 		return advertService.getAllAdverts();
 	}
+    
+    @RequestMapping(value="/adverts/{subcategory}", method=RequestMethod.GET)
+   	public List<Advert> getAdvertsBySubcategory(@PathVariable("subcategory") String subcategory) {
+   		return advertService.getAdvertsBySubcategory(subcategory);
+   	}
     	 
 	
     @RequestMapping(value = "/adverts/{id}", method = RequestMethod.GET)
