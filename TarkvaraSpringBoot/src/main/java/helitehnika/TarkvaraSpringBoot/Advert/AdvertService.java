@@ -28,7 +28,7 @@ public class AdvertService {
 
 	List<Advert> getAdvertsBySubcategory(String subcategory) {
 		
-		return advertRepository.findBySubcategory(subcategory);
+		return advertRepository.findAllBySubcategory(subcategory);
 	}
 
 }
