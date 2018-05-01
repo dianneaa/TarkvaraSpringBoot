@@ -36,10 +36,10 @@ public class AdvertController {
    	}
     	 
 	
-    //@RequestMapping(value = "/adverts/{id}", method = RequestMethod.GET)
-    //public Optional<Advert> getAdvertById(@PathVariable("id") long id){
-      //  return advertService.getAdvertById(id);
-    //}    	
+    @RequestMapping(value = "/advert/{id}", method = RequestMethod.GET)
+    public Advert getAdvertById(@PathVariable("id") long id){
+    	return advertService.getAdvertById(id);
+    }    	
 }
 
 	

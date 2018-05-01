@@ -19,10 +19,9 @@ public class AdvertService {
 	
 	 List<Advert> getAllAdverts() {
 			return advertRepository.findAll();
-		}
-	 
+		}	 
 	
-	Optional<Advert> getAdvertById(long id){
+	Advert getAdvertById(long id){
 		return advertRepository.findById(id);
     }
 

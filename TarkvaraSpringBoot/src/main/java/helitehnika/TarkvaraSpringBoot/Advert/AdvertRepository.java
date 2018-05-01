@@ -10,6 +10,8 @@ import org.springframework.stereotype.Repository;
 public interface AdvertRepository extends CrudRepository<Advert, Long> {
 	@Override
 	public List<Advert> findAll();
+	
+	public Advert findById(@Param("id") long id);
 
 	public List<Advert> findAllBySubcategory(@Param("subcategory") String subcategory);
 	
