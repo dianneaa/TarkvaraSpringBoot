@@ -32,13 +32,11 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')	
-	//compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.data:spring-data-rest-hal-browser')	
 	runtime ("javax.xml.bind:jaxb-api")
 	compile('org.mariadb.jdbc:mariadb-java-client:1.5.8')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
-	//testCompile('org.springframework.security:spring-security-test')
 	testCompile("junit:junit")
 	compileOnly ('org.projectlombok:lombok:1.16.20')	
 	
